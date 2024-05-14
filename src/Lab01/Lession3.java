@@ -20,8 +20,12 @@ public class Lession3 {
     // hàm dùng để lựa chọn từ menu
     static void execute(int ch){
         switch (ch){
-            case 1: lession1.main(null); break;
-            case 2: lession2.main(null); break;
+            case 1:
+                lession1.main(null);
+            break;
+            case 2:
+                lession2.main(null);
+                break;
             case 3: System.exit(0); break;
             default: System.out.println("Invalid option!"); break; // chọn k hợp lệ thì thoát
         }
