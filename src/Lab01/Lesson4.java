@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package Testlap4;
+package Lab01;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -11,11 +11,7 @@ import java.util.Scanner;
  *
  * @author OS
  */
-public class Testlap4 {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Lesson4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
@@ -85,14 +81,17 @@ public class Testlap4 {
         return tong / diem.length;
     }
 
+
+
     public static String chuanHoaTen(String name) {
         name = name.trim()
-                .replaceAll("\\s+", " ")
-                .replaceAll("[^a-zA-Z\\s]", "");
+                .replaceAll("\\s+", " ") // xử lý các khoảng trống vd: ("           ") -> (" ")
+                .replaceAll("[^a-zA-Z\\s]", ""); // nhận các ký tự từ a -> z và A -> Z
         String[] subTen = name.split(" ");
-        StringBuilder sb = new StringBuilder();
-        for (String s : subTen) {
-            if (!s.isEmpty()) {
+        StringBuilder sb = new StringBuilder(); //sử dụng để tạo và quản lý chuỗi một cách hiệu quả hơn so với việc sử dụng các chuỗi thông thường.
+
+        for (String s : subTen) { // duyệt qua từng phần tử của mảng subTen
+            if (!s.isEmpty()) { // nếu chuỗi ni không rỗng thì thực hiện cái cục bên trong
                 sb.append(s.substring(0, 1).toUpperCase());
                 sb.append(s.substring(1).toLowerCase());
                 sb.append(" ");
@@ -100,6 +99,5 @@ public class Testlap4 {
         }
         return sb.toString().trim();
     }
-
 }
 
