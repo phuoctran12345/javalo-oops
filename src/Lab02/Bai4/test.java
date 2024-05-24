@@ -12,8 +12,8 @@ public class test {
         ArrayList<Person>  danhSachNguoi = new ArrayList<>();
 
         // Khởi tạo 2 đối tượng của lớp Person
-        Lab02.Bai3.Person person1 = new Person(1, "Nguyen Van Nam", true);
-        Lab02.Bai3.Person person2 = new Person(2, "Nguyen Van Na", false);
+        Person person1 = new Person(1, "Nguyen Van Nam", true);
+        Person person2 = new Person(2, "Nguyen Van Na", false);
 
         //thêm người vào danh sách
         danhSachNguoi.add(0,person1);

@@ -6,16 +6,14 @@ public class Person {
     private boolean gender;;
 
 
-    public static void main(String[] args) {
 
-    }
     public void scanfInfPer() {
         this.id = Integer.parseInt(Untils.getValue("Enter Id:"));
         this.name = Untils.getValue("Enter Id:");
         this.gender= Boolean.getBoolean(Untils.getValue("Enter Id:"));
     }
 
-    public Person() {
+    public Person(int id , String name , boolean gender) {
         this.id = id;
         this.name = name;
         this.gender = gender;

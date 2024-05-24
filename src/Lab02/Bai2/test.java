@@ -5,7 +5,8 @@ public class test {
         Person p;
         test t = new test();
         p = t.scanfInfo();
-        System.out.println("p: " + p);
+        System.out.print("");
+        printInfo(p);
 
         //c1: (chưa được tối ưu)
        //  Person p = new Person();
@@ -23,9 +24,10 @@ public class test {
     // nhớ luôn cách dùng hàm nhập ni
     public static Person scanfInfo() {
         int id = Integer.parseInt(Untils.getValue("Enter id: "));
-        String name = Untils.getValue("Enter name:");
-        boolean gender = Boolean.getBoolean(Untils.getValue("Enter gender:"));
-        return new Person();
+        String name = Untils.getValue("Enter name: ");
+        String genderInput = Untils.getValue("Enter gender (male/female): ").toLowerCase();
+        boolean gender = genderInput.equals("male");
+        return new Person(id, name, gender);
 
 
         /*chưa được tối ưu
