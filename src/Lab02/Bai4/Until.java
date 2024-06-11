@@ -2,7 +2,7 @@ package Lab02.Bai4;
 
 import java.util.Scanner;
 
-public class Untils {
+public class Until {
 
     //Phương thức này hiển thị một thông báo cho người dùng và đọc dữ liệu nhập từ bàn phím.
     public static  String getValue  (String input) {
