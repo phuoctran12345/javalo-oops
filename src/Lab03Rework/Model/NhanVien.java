@@ -95,6 +95,5 @@ public  class NhanVien {
         System.out.println("Họ và tên: " + ho + " " + ten);
         System.out.println("Tuổi: " + tuoi);
         System.out.println("Ngày sinh: " + ngaySinh);
-
     }
 }

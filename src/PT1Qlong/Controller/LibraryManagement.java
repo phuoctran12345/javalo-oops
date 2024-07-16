@@ -1,10 +1,10 @@
-package PT1.Controller;
+package PT1Qlong.Controller;
 
 
-import PT1.Model.Library;
-import PT1.View.Menu;
+import PT1Qlong.Model.Library;
+import PT1Qlong.View.Menu;
 
-public class LibraryManager {
+public class LibraryManagement {
     public static void main(String[] args) {
         Library library = new Library();
         boolean exit = false;
