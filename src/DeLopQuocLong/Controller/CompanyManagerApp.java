@@ -18,7 +18,8 @@ public class CompanyManagerApp {
             Menu.displayMenu();
             int choice = Validation.getInt("Choose an option: ", 1, 6);
 
-            switch (choice) {
+            switch (choice)
+            {
                 case 1:
                     displayAllCustomers();
                     break;

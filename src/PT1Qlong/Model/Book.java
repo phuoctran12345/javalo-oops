@@ -1,4 +1,4 @@
-package PT1.Model;
+package PT1Qlong.Model;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 

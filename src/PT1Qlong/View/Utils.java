@@ -1,4 +1,4 @@
-package PT1.View;
+package PT1Qlong.View;
 
 import java.util.Scanner;
 

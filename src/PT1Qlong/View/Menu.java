@@ -1,7 +1,6 @@
-package PT1.View;
+package PT1Qlong.View;
 
 import java.util.Scanner;
-
 public class Menu {
     public static int displayMenuAndGetChoice() {
         Scanner scanner = new Scanner(System.in);
